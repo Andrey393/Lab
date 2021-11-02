@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/Fon"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:id="@+id/textB5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:text="Высчиление"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/Знач_A"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textUri|none|number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/Знач_В"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textUri|number"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textB2"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/Resul"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editR"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:inputType="textUri|number"
+            android:textColor="@color/white"
+            android:enabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15sp">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Кнопки"
+            android:onClick="onClickFragment"
+            android:text="@string/Add"
+            android:textSize="16sp"
+            app:rippleColor="@color/Нажатие_Кнопки" />
+
+        <Button
+            android:id="@+id/vichitanie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Кнопки"
+            android:onClick="onClickFragment"
+            android:text="@string/Subste"
+            android:textSize="16sp"
+            app:iconTint="@color/teal_200"
+            app:rippleColor="@color/Нажатие_Кнопки" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ymnojenie"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Кнопки"
+            android:onClick="onClickFragment"
+            android:text="@string/Melti"
+            android:textSize="16sp"
+            app:iconTint="@color/teal_200"
+            app:rippleColor="@color/Нажатие_Кнопки" />
+
+        <Button
+            android:id="@+id/deleni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Кнопки"
+            android:onClick="onClickFragment"
+            android:text="@string/Debid"
+            android:textSize="16sp"
+            app:iconTint="@color/teal_200"
+            app:rippleColor="@color/Нажатие_Кнопки" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="444dp"
+        android:layout_height="57dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/stepen"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Кнопки"
+            android:onClick="onClickFragment"
+            android:text="@string/Степень"
+            android:textSize="16sp"
+            app:iconTint="@color/teal_200"
+            app:rippleColor="@color/Нажатие_Кнопки" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="45sp"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:id="@+id/textB6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:text="Функции"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textB4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/Знач_D"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editD"
+            android:layout_width="19dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sin2"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="15sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Кнопки"
+            android:onClick="onClickFragment2"
+            android:text="@string/Sin"
+            android:textSize="16sp"
+            app:iconTint="@color/teal_200"
+            app:rippleColor="@color/Нажатие_Кнопки" />
+
+        <Button
+            android:id="@+id/cos"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Кнопки"
+            android:onClick="onClickFragment2"
+            android:text="@string/Cos"
+            android:textSize="16sp"
+            app:iconTint="@color/teal_200"
+            app:rippleColor="@color/Нажатие_Кнопки" />
+
+        <Button
+            android:id="@+id/tg"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Кнопки"
+            android:onClick="onClickFragment2"
+            android:text="@string/Tan"
+            android:textSize="16sp"
+            app:iconTint="@color/teal_200"
+            app:rippleColor="@color/Нажатие_Кнопки" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="423dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/koren"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Кнопки"
+            android:onClick="onClickFragment2"
+            android:text="@string/Корень"
+            android:textSize="16sp"
+            app:iconTint="@color/teal_200"
+            app:rippleColor="@color/Нажатие_Кнопки"
+            android:layout_marginLeft="35sp"/>
+
+        <Button
+            android:id="@+id/log"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Кнопки"
+            android:onClick="onClickFragment2"
+            android:text="@string/Log"
+            android:textSize="16sp"
+            app:iconTint="@color/teal_200"
+            app:rippleColor="@color/Нажатие_Кнопки"
+            android:layout_marginLeft="10sp"/>
+    </LinearLayout>
+
+</LinearLayout>

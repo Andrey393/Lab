@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Lab1Cal Gritsakovich Andrey Gr393</string>
+    <string name="Add">Сложение</string>
+    <string name="Melti">Умножение</string>
+    <string name="Debid">Деление</string>
+    <string name="Subste">Вычитание</string>
+    <string name="Знач_A">Значение А</string>
+    <string name="Знач_В">Значение В</string>
+    <string name="Знач_D">Значение D</string>
+    <string name="Resul">Результат</string>
+    <string name="Степень">Возведения в степень</string>
+    <string name="Корень">√</string>
+    <string name="Sin">Sin</string>
+    <string name="Cos">Cos</string>
+    <string name="Tan">Tg</string>
+    <string name="Log">Log</string>
+
+</resources>
