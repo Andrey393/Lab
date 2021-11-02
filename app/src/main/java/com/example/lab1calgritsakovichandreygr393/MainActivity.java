@@ -27,11 +27,17 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClickFragment(View v)
     {
-        String sa=ta.getText().toString();
-        String sb=tb.getText().toString();
+        double a= 0;
+        double b= 0;
+        try {
+            String sa=ta.getText().toString();
+            String sb=tb.getText().toString();
 
-        double a=Double.parseDouble(sa);
-        double b=Double.parseDouble(sb);
+            a = Double.parseDouble(sa);
+            b = Double.parseDouble(sb);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
 
 
         switch (v.getId())
@@ -51,11 +57,17 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClickFragment2(View v)
     {
-        String sd=td.getText().toString();
-        double d=Double.parseDouble(sd);
+        String sd= null;
+        double d= 0;
+        try {
+            sd = td.getText().toString();
+            d = Double.parseDouble(sd);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+
         switch (v.getId())
         {
-
                case R.id.sin2:d=Math.sin(d);sd=String.valueOf(d);
             td.setText(sd);break;
              case R.id.cos:d=Math.cos(d);sd=String.valueOf(d);

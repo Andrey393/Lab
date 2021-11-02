@@ -52,7 +52,8 @@
             android:layout_marginLeft="15sp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textUri|none|number" />
+            android:inputType="textUri|none|number"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
     <LinearLayout
@@ -233,7 +234,8 @@
             android:layout_marginLeft="15sp"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
