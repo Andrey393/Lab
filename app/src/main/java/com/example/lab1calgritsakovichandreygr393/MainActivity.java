@@ -80,6 +80,5 @@ public class MainActivity extends AppCompatActivity {
             case  R.id.log:d=Math.log(d);sd=String.valueOf(d);//Log()
                td.setText(sd);break;
         }
-
     {
 }}}
