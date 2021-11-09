@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     {
         double a= 0;
         double b= 0;
+        double c=0;
         try {
             String sa=ta.getText().toString();
             String sb=tb.getText().toString();
@@ -42,15 +43,15 @@ public class MainActivity extends AppCompatActivity {
 
         switch (v.getId())
         {
-            case R.id.add:double c=a+b;String sc=String.valueOf(c);
+            case R.id.add: c=a+b;String sc=String.valueOf(c);//Сложения
                 tr.setText(sc);break;
-            case  R.id.vichitanie:c=a-b; sc=String.valueOf(c);
+            case  R.id.vichitanie:c=a-b; sc=String.valueOf(c);//Вычитание
                 tr.setText(sc);break;
-            case  R.id.ymnojenie:c=a*b; sc=String.valueOf(c);
+            case  R.id.ymnojenie:c=a*b; sc=String.valueOf(c);//Умножения
                 tr.setText(sc);break;
-            case  R.id.deleni:c=a/b; sc=String.valueOf(c);
+            case  R.id.deleni:c=a/b; sc=String.valueOf(c);//Деление
                 tr.setText(sc);break;
-            case  R.id.stepen:c=Math.pow(a,b); sc=String.valueOf(c);
+            case  R.id.stepen:c=Math.pow(a,b); sc=String.valueOf(c);//Степень
                 tr.setText(sc);break;
         }
 
@@ -68,15 +69,15 @@ public class MainActivity extends AppCompatActivity {
 
         switch (v.getId())
         {
-               case R.id.sin2:d=Math.sin(d);sd=String.valueOf(d);
+               case R.id.sin2:d=Math.sin(d);sd=String.valueOf(d);//Sin()
             td.setText(sd);break;
-             case R.id.cos:d=Math.cos(d);sd=String.valueOf(d);
+             case R.id.cos:d=Math.cos(d);sd=String.valueOf(d);//Cos()
                  td.setText(sd);break;
-            case  R.id.tg:d=Math.tan(d);sd=String.valueOf(d);
+            case  R.id.tg:d=Math.tan(d);sd=String.valueOf(d);//Tan()
                  td.setText(sd);break;
-            case R.id.koren:d=Math.sqrt(d);sd=String.valueOf(d);
+            case R.id.koren:d=Math.sqrt(d);sd=String.valueOf(d);//Корень()
                 td.setText(sd);break;
-            case  R.id.log:d=Math.log(d);sd=String.valueOf(d);
+            case  R.id.log:d=Math.log(d);sd=String.valueOf(d);//Log()
                td.setText(sd);break;
         }
 
